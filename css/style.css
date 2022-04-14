@@ -62,3 +62,67 @@ span button{
     font-size: 18px;
     font-weight: bold; 
 }
+
+.hidden{
+    display: none !important
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+.aside h2{
+    background-color: aqua;
+    margin-bottom: 0;
+}
+.aside{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+}
+.your-pizza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.your-pizza h1{
+    margin: 0;
+}
+.your-pizza button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.info span, .finalizar-compra span{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.confirmation-box{
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+}
+.confirmation{
+    background-color: brown;
+    width: 100%;
+    
+}
+
+.confirmation img{
+    width: 300px;
+    height: 300px;
+}
