@@ -1,20 +1,17 @@
 body{
     background-color: #d4d4d4;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 header h1{
     width: 100%;
 }
 
-main{
-    display: flex;
-   
-}
-
 section{
     display: flex;
-    flex-direction: column;
-    width: 33,33%;
+    flex-wrap: wrap;
+    width: 100vw;
     justify-content: start;
     align-items: center;
     margin-left: 10px;
@@ -35,6 +32,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 400px;
    
 }
 .pizza-option p{
@@ -49,14 +47,19 @@ span{
     justify-content: center;
     align-items: center;
 }
-span button{
+.pizza-option button{
     width: 40px;
     height: 40px;
     background-color: rgb(50, 50, 255);
     color: #fff;
     border-radius: 50% ;
+   
 }
 
+main{
+    display: flex;
+    transition: all ease-in .5s;
+}
 
 #flavor{
     font-size: 18px;
@@ -64,25 +67,41 @@ span button{
 }
 
 .hidden{
-    display: none !important
+    display: none !important;
 }
 aside{
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
+   
 
 }
+.line{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.200);
+}
 .aside h2{
-    background-color: aqua;
     margin-bottom: 0;
 }
+.your-pizza img{
+    width: 35px;
+    height: 35px;
+}
 .aside{
-    background-color: blue;
+    background-color: #3296d4;
     display: flex;
     flex-direction: column;
     width: 25%;
     height: 100vh;
+    transition: all ease-in 0.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+     padding: 10px;
+    /* position: absolute;
+    top:-60px;
+    right: 0; */
 }
 .your-pizza{
     display: flex;
@@ -108,21 +127,69 @@ aside{
     justify-content:space-between;
     align-items: flex-start;
 }
-
+.position{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .confirmation-box{
     display: flex;
-    background-color: aqua;
-    align-items: center;
-    width: 100vw;
+    background-color: #fff;
+    width: 70vw;
     height: 500px;
+    position: absolute;
+    justify-content: center;
+    transition: all ease-in .5s;
+    box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.5);
+    
 }
 .confirmation{
-    background-color: brown;
-    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
+.finalizar-compra button{
+    background-color: #229a00;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-style: bold;
+    margin-left: 60px;
+}
+
+.pedido{
+    width: auto;
+    padding: 50px 40px;
+}
+
 .confirmation img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+}
+.confirmation-button button{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    background-color: #229a00;
+}
+
+.preço-info{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+.preço-info button{
+    width: 50px;
+    height: 30px;
 }
