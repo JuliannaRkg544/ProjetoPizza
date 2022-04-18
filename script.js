@@ -11,6 +11,7 @@ let pizzaJson = [
 function main(){
     const pizzas = document.querySelector("section");
      pizzas.innerHTML = ""
+    //  testing commit
     for (let i=0; i<pizzaJson.length; i++){
         pizzas.innerHTML += `       
         <div class="pizza-option">
