@@ -19,7 +19,7 @@ function main(){
             <span class="title">
                 <p id="price"><b>R$ ${pizzaJson[i].price.toFixed(2)}</b></p> 
                 <p id="flavor">${pizzaJson[i].name}</p>
-                <p>${pizzaJson[i].description}</p>
+                <p>${pizzaJson[i].description }</p>
             </span>
         </div>
     `
